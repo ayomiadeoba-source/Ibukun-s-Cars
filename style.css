@@ -1,0 +1,301 @@
+*{
+    margin: 0px;    
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body nav.navbar{
+   background-color:  lightseagreen;
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   line-height:80px;
+   padding-left: 30px;
+   padding-right: 30px; 
+   align-items: center;
+}
+
+li a{
+    font-size: 30px;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+nav.navbar ul li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box{
+    
+background-color: aqua;
+padding-top: 50px;
+padding-bottom: 50px;
+font-size: 30px;
+border-top: 50px ridge blue;
+border-right: 50px ridge green;
+border-bottom: 50px ridge yellow;
+border-left: 50px ridge greenyellow;
+text-align: center;
+margin-top: 50px;
+margin-right: 50px;
+margin-bottom: 50px;
+margin-left: 50px;
+
+    }
+
+.background{
+    position: relative;
+    background-image: url("cars\ 2.jpeg");
+    height: 500px; 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background::after{
+    background-color: rgba(0, 0, 0, 0.628);
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+}
+
+.Welcome{
+    z-index: 1;
+    font-size: 3rem;
+}
+
+.Enjoy{
+    z-index: 1;
+    font-size: 1.5rem;
+}
+
+.aboutinfo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.aboutinfotext{
+    width: 400px;
+}
+
+.aboutinfohead{
+    font-size: 2rem;
+}
+div.aboutinfotext p{
+    font-size: 1.5rem;
+}
+
+.aboutinfoimg{
+    width:  400px;
+}
+div.aboutinfoimg img{
+    width: 100%;
+}
+
+div.cardsection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+div.cardsection div.card{
+    width: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.482);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+div.card img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.cardinfo{
+    padding: 20px;
+    
+}
+
+h2.cardhead{
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-left: 4rem;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+div.aboutcontent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+div.aboutimg{
+    width: 400px;
+}
+
+div.abouttext{
+    width: 500px;
+}
+
+div.abouttext p{
+    font-size: 1.2rem;
+}
+
+div.contactbody{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2.5rem;
+
+}
+
+div.contactdetails{
+    width: 450px;
+}
+
+div.contactform{
+    display: flex;
+    justify-content: center;
+    width: 450px;
+}
+
+
+div.contactform div{
+    width: 95%;
+}
+
+div.contactform div form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+div.fcontainer form input{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+input.button{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+p.reach{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p.mail{
+   font-weight: bold;
+    font-size: 1.5rem; 
+    margin-top: 2rem;
+}
+
+@media(max-width:450px){
+    li a{
+        font-size: 20px;
+    }
+    
+    nav.navbar img{
+        width: 45px !important;
+        height: 45px !important;
+    }
+
+    body nav.navbar{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Welcome{
+        text-align: center;
+
+    }
+    .Enjoy{
+        text-align: center;
+    }
+
+    .background::after{
+        height: 350px;
+    }
+    
+    .background{
+        height: 350px;
+    }
+
+    .aboutinfotext{
+        width: 280px;
+    }
+
+    .aboutinfoimg{
+        width: 280px;
+        margin-top: 2rem;
+    }
+
+    h2.cardhead{
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-left: 0rem;
+    text-align: center;
+}
+
+div.cardsection div.card{
+    width: 280px;
+    border: 2px solid rgba(0, 0, 0, 0.482);
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+div.aboutimg{
+    width: 200px;
+}
+
+div.aboutimg img{
+    width: 100%;
+    margin: 0pm;
+    padding: 0px;
+}
+
+div.abouttext{
+    width: 280px;
+}
+
+div.contactform{
+    width: 300px;
+    margin-top: 2rem;
+}
+}
